@@ -1,10 +1,22 @@
-
-main{
-    color:white;
-
-    padding: 0 1rem
+.greeting {
+  height: 15rem;
 }
-#greeting h1{
-    text-align: center;
-
+.greeting h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
 }
+.about-section {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: rgb(130, 131, 133);
+  border-radius: 6px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
+}
+.about {
+  width: 50rem;
+  padding:1rem;
+  
+}
+

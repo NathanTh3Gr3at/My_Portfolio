@@ -30,6 +30,17 @@ background-color:rgb(77, 77, 77) ;
   z-index: 1000;
   border-radius: 6px;
 }
+#page-logo{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+#page-logo  img{
+  height:2rem;
+  margin-right: 0.5rem
+}
 
 header ul {
   display: flex;

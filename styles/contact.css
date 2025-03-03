@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: center;
   display: flex;
+  
 }
 h1 {
   color: white;
@@ -21,4 +22,7 @@ h1 {
 .contact-links a:hover {
   background-color: beige;
   color: black;
+}
+.contact-links img {
+  height:2.5rem
 }

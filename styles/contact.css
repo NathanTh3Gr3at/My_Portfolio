@@ -7,20 +7,25 @@
 }
 h1 {
   color: white;
-  font-size: 2rem;
+  
   text-align: center;
   text-transform: uppercase;
+}
+p{
+  text-align: center;
+  padding-bottom: 2rem;
 }
 .contact-links a {
   color: white;
   text-decoration: none;
   margin: 0 1.5rem;
   padding: 0.5rem;
-  border-radius: 5px;
-  transition: background-color 0.4s ease;
+  border-radius: var(--border-radius-medium);
+  transform: scale(1.06);
+  transition: background-color 0.4s ease,transform 0.3s ease-in-out;
 }
 .contact-links a:hover {
-  background-color: beige;
+  background-color: var(--color-hover);
   color: black;
 }
 .contact-links img {

@@ -11,72 +11,99 @@
     />
     <link rel="stylesheet" href="/styles/shared.css" />
     <link rel="stylesheet" href="/styles/projects.css" />
+    <script src="scripts/fetch-header.js" defer></script>
+    <script src="scripts/collapsible.js" defer></script>
     <title>Projects</title>
   </head>
   <body>
-    <header>
-      <a href="index.html" id="page-logo"><img src="images/icons//house-solid.svg">Home</a>
-      <nav>
-        <ul>
-          <li>
-            <a href="toolkit.html">My Tech Toolkit</a>
-          </li>
-          <li>
-            <a href="projects.html">Projects</a>
-          </li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div id="header-container"></div>
     <main>
       <h1>Projects</h1>
-      <ul class="container">
-        <li >
+      <div id="container">
+        <ul class="projects">
+        <li>
           <section class="project-item">
             <h2>Thyme To Cook Recipe App</h2>
             <p id="byline">Thrid Year Group Project</p>
             <img src="images/placeholder.jpeg" alt="placeholder" />
             <h3>Description</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-              labore debitis fugiat velit. Optio magnam animi quisquam
-              laboriosam nam minus culpa fugit odio exercitationem dolore
-              inventore aperiam praesentium, rem placeat.
+              A recipe app designed to simplify meal planning and grocery
+              shopping. Thyme To Cook allows users to search for recipes, save
+              favorites, generate shopping lists, and plan meals efficiently.
+              Built using Flutter and Firebase, the app offers a seamless
+              experience for both casual cooks and food enthusiasts.
             </p>
-            <a href="projects.html">To Github Repository</a>
+            <button type="button" class="collapsible">
+              Skills, Tools and Technology Used (W.I.P)
+            </button>
+            <div class="content">
+              <p>Skills</p>
+              <p>Tools</p>
+              <p>Technology</p>
+            </div>
+            <a href="https://github.com/NathanTh3Gr3at/ITPV302_Project"
+              >To Github Repository</a
+            >
           </section>
         </li>
-        <li >
+        <li>
           <section class="project-item">
             <h2>Flutter Udemy Course</h2>
             <p id="byline">To expand on Flutter concepts</p>
             <img src="images/placeholder.jpeg" alt="placeholder" />
             <h3>Description</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-              labore debitis fugiat velit. Optio magnam animi quisquam
-              laboriosam nam minus culpa fugit odio exercitationem dolore
-              inventore aperiam praesentium, rem placeat.
+              A comprehensive course on Flutter development, covering everything
+              from the basics to advanced topics. This course explored UI
+              design, state management, and backend integration with Firebase,
+              equipping me with the skills to build dynamic and responsive
+              mobile applications.
             </p>
-            <a href="projects.html">To Github Repository</a>
+            <button type="button" class="collapsible">
+              Skills, Tools and Technology Used (W.I.P)
+            </button>
+            <div class="content">
+              <p>Skills</p>
+
+              <p>Tools</p>
+              <p>Technology</p>
+            </div>
+            <a href="https://github.com/NathanTh3Gr3at/FlutterUdemyCourse"
+              >To Github Repository</a
+            >
           </section>
         </li>
-        <li >
+        <li>
           <section class="project-item">
-            <h2>100 Days of Code -  Udemy Course</h2>
+            <h2>100 Days of Code - Udemy Course</h2>
             <p id="byline">A Web Development Course</p>
             <img src="images/placeholder.jpeg" alt="placeholder" />
             <h3>Description</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-              labore debitis fugiat velit. Optio magnam animi quisquam
-              laboriosam nam minus culpa fugit odio exercitationem dolore
-              inventore aperiam praesentium, rem placeat.
+              A structured 100-day coding challenge focused on web development.
+              Starting with HTML, CSS, and JavaScript, the course advanced to
+              Express.js, SQL & MongoDB integration, and web security. Two
+              milestone projects consolidated key concepts, reinforcing
+              full-stack development skills.
             </p>
-            <a href="projects.html">To Github Repository</a>
+            <button type="button" class="collapsible">
+              Skills, Tools and Technology Used (W.I.P)
+            </button>
+            <div class="content">
+              <p>Skills</p>
+              <p>Tools</p>
+              <p>Technology</p>
+            </div>
+            <a
+              href="https://github.com/NathanTh3Gr3at/100-Days-of-Code-Udemy-Course"
+              >To Github Repository</a
+            >
           </section>
         </li>
       </ul>
+      </div>
+      
     </main>
   </body>
 </html>

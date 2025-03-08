@@ -10,7 +10,9 @@ html{
 --color-hover:rgb(166, 206, 216);
 --color-card:rgb(43,47,58);
 --side-drawer-bg:rgb(34,40,49);
+--container-item-bg:rgb(63, 68, 71);
 --i-color:#1b2735;
+--color-title-bg:rgb(33, 36, 45);
 /* Border Radius   */
 --border-radius-small:4px;
 --border-radius-medium:6px;
@@ -26,16 +28,14 @@ html{
 --h4:1.1rem;
 --p:1.125rem;
 }
-header nav ul li a{
-  border-bottom:3px solid var(--i) ;
-}
+
 
 body {
   font-family: "Lato", sans-serif;
   margin: 0;
   padding-top:6rem;
   background: var(--color-main-bg);
-  color: rgb(68, 68, 68);
+  
   height: 100%;
 }
 main,
@@ -45,11 +45,11 @@ main,
 }
 
 ul {
-  list-style: none;
+  list-style: none;padding:0;
 }
 
 header {
-  position: fixed; /* Fixed position to stay at the top */
+  position: fixed; 
   top: 0;
   left: 0;
   width: 100%;
@@ -57,9 +57,9 @@ header {
   background-color: var(--color-header-bg);
   padding:  0.5rem;
   box-shadow: var(--box-shadow);
-  z-index: 1100; /* Ensure header stays above other elements */
+  z-index: 1100; 
   border-radius: var(--border-radius-medium);
-  display: flex; /* Missing display flex */
+  display: flex; 
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
@@ -103,7 +103,7 @@ header nav a:hover {
 .menu-btn {
   width: 3rem;
   height: 3rem;
-  display: none; /* Hide by default, shown with media queries */
+  display: none; 
   flex-direction: column;
   justify-content: space-around;
 }
@@ -120,8 +120,8 @@ header nav a:hover {
   background-color: var(--side-drawer-bg);
   position: fixed;
   top: 2rem;
-  right: -100%; /* Hide initially */
-  z-index: 1050; /* Ensures it's above other elements */
+  right: -100%; 
+  z-index: 1050; 
   transition: right 0.3s ease-in-out;
 }
 
@@ -167,11 +167,13 @@ header nav a:hover {
   color: var(--color-header-text-hover);
   background-color: var(--color-header-bg-hover);
 }
+h1{font-size: var(--h1);font-weight: bold;text-align: center;}
 h2{
   font-size: var(--h2);
+  font-weight: bold;
 }
 h3{
-  font-size: var(--h3);
+  font-size: var(--h3);font-weight: bold;
 }
 p{
   font-size: var(--p);

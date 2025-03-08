@@ -1,31 +1,57 @@
-body{
-  height:87.5vh
+body {
+  height: 87.5vh;
 }
 .greeting {
   height: 15rem;
 }
 .greeting h1 {
-  text-align: center;
   font-size: 5rem;
   color: var(--color-header-text);
-  font-weight: bold;
+  text-shadow: 2px 2px 8px rgba(183, 230, 235, 0.5);
+
+  animation: textColorShift 12s linear infinite alternate;
 }
-#container{
-  display: flex; flex-direction: column;align-items: center;
+@keyframes textColorShift {
+  0% {
+    color: rgb(183, 230, 235);
+    text-shadow: 2px 2px 6px rgba(183, 230, 235, 0.5);
+  }
+  50% {
+    color: rgb(133, 216, 216);
+    text-shadow: 2px 2px 8px rgba(133, 216, 216, 0.7);
+  }
+  100% {
+    color: rgb(83, 202, 202);
+    text-shadow: 2px 2px 10px rgba(83, 202, 202, 0.9);
+  }
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 .about-section {
   width: 50rem;
-  background-color: rgb(57, 64, 77,0.2);
+  background-color: rgb(57, 64, 77, 0.2);
   border-radius: var(--border-radius-medium);
   box-shadow: var(--box-shadow);
 }
 .about {
   padding: 1rem;
 }
+strong{
+  font-weight: bold;font-style: italic;
+}
 
-@media (max-width: 48rem){
-  .about-section{
-    width:auto;
+@media (max-width: 48rem) {
+  .about-section {
+    width: auto;
+  }
+  .greeting {
+    height: 10rem;
+  }
+  .about {
+    text-align: center;
   }
 }

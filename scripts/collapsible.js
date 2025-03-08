@@ -9,10 +9,5 @@ for ( i=0;i<collapsibleElement.length;i++){
         }else{
             content.style.maxHeight=content.scrollHeight +"px"
         }
-       /*  if(content.style.display==="block"){
-            content.style.display="none"
-        }else{
-            content.style.display="block"
-        } */
     })
 }

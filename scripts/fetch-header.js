@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
         drawerBtnElement.addEventListener("click", toggleDrawer);
       }
 
-      // Now that the header is loaded, you can interact with its elements
       setActivePage();
     })
     .catch((error) => console.error("Error loading header:", error));
@@ -24,14 +23,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function setActivePage() {
   const currentPage = window.location.pathname;
-  const navLinks = document.querySelectorAll('#header-container nav a');
+  const navLinks = document.querySelectorAll("#header-container nav a");
 
-  navLinks.forEach(link => {
+  navLinks.forEach((link) => {
     if (link.href.includes(currentPage)) {
-      link.classList.add('active');
+      link.classList.add("active");
     }
   });
 }
-
-
-

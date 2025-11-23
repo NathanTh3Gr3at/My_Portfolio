@@ -27,7 +27,7 @@ function setActivePage() {
 
   navLinks.forEach((link) => {
     if (link.href.includes(currentPage)) {
-      link.classList.add("active");
+      link.classList.add("selected-page");
     }
   });
 }

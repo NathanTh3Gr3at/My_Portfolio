@@ -9,157 +9,161 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="styles/shared.css" />
     <link rel="stylesheet" href="styles/toolkit.css" />
+    <link rel="stylesheet" href="styles/tab-group-shared.css" />
+    <link rel="icon" href="/images/icons/code-solid.svg" type="image/x-icon" />
     <script src="scripts/fetch-header.js" defer></script>
-    <title>My Tech Toolkit</title>
+    <title>Tech Toolkit</title>
   </head>
   <body>
     <div id="header-container"></div>
-
     <main>
-      <div class="container">
-        <section class="toolkit-item">
-          <h2 class="card-title">Tools</h2>
-          <div class="card-content">
-            <p>Software and Platforms used for development</p>
+      <div class="gap"></div>
+      <div class="tab-container">
+        <div class="tab-list">
+          <button class="tab-button active" data-tab="tools">Tools</button>
+          <button class="tab-button" data-tab="technologies">
+            Technologies
+          </button>
+          <button class="tab-button" data-tab="languages">Languages</button>
+          <button class="tab-button" data-tab="other">Interests</button>
+        </div>
+        <div class="tab-content">
+          <div class="tab-panel active" id="tools">
+            <h2>Tools</h2>
+            <p class="sub-heading">
+              Software and Platforms used for development
+            </p>
             <ul>
               <li>
-                <img
-                  src="images/icons/visual-studio-svgrepo-com.svg"
-                  alt="VS Icon"
-                />Visual studio
+                <img src="images/icons/vscode.svg" />
+                <p>VS Code</p>
               </li>
               <li>
-                <img
-                  src="images/icons/visual-studio-code-svgrepo-com.svg"
-                  alt="VSCode Icon"
-                />Visual Studio Code
+                <img src="images/icons/vs.svg" />
+                <p>Visual Studio</p>
               </li>
               <li>
-                <img
-                  src="images/icons/github-brands.svg"
-                  alt="GitHub Icon"
-                />GitHub
+                <img src="images/icons/GitHub_Invertocat_Light.svg" />
+                <p>GitHub</p>
               </li>
               <li>
-                <img
-                  src="images/icons/firebase-svgrepo-com.svg"
-                  alt="Firebase Icon"
-                />Firebase
+                <img src="images/icons/firebase.svg" />
+                <p>Firebase</p>
               </li>
               <li>
-                <img
-                  src="images/icons/android-brands-solid.svg"
-                  alt="Android Studio Icon"
-                />Android Studio
+                <!--Android Studio icon by Icons8-->
+                <img src="images/icons/android-studio.svg" />
+                <p>Android Studio</p>
               </li>
             </ul>
           </div>
-        </section>
-        <section class="toolkit-item">
-          <h2 class="card-title">Technologies</h2>
-          <div class="card-content">
-            <p>Frameworks, Libraries and Concepts</p>
+          <div class="tab-panel" id="technologies">
+            <h2>Technologies</h2>
+            <p class="sub-heading">Frameworks, Libraries and Concepts</p>
             <ul>
               <li>
-                <img
-                  src="images/icons/mongodb-svgrepo-com.svg"
-                  alt="MongoDB Icon"
-                />MongoDB
+                <img src="images/icons/mongodb.svg" />
+                <p>MongoDB</p>
               </li>
               <li>
-                <img
-                  src="images/icons/angular-brands-solid.svg"
-                  alt="Angular Icon"
-                />Angular
+                <img src="images/icons/angular.svg" />
+                <p>Angular</p>
               </li>
               <li>
-                <img
-                  src="images/icons/node-js-brands-solid.svg"
-                  alt="Node.js Icon"
-                />Node.js
+                <img src="images/icons/nodejs.svg" />
+                <p>Node.js</p>
               </li>
               <li>
-                <img
-                  src="images/icons/flutter-brands-solid.svg"
-                  alt="Flutter Icon"
-                />Flutter
+                <img src="images/icons/flutter.svg" />
+                <p>Flutter</p>
               </li>
               <li>
-                <img
-                  src="images/icons/mysql-svgrepo-com.svg"
-                  alt="MySql Icon"
-                />MySQL
+                <img src="images/icons/mysql.svg" />
+                <p>MySQL</p>
               </li>
             </ul>
           </div>
-        </section>
-        <section class="toolkit-item">
-          <h2 class="card-title">Programming Languages</h2>
-          <div class="card-content">
+          <div class="tab-panel" id="languages">
+            <h2>Languages</h2>
             <ul>
               <li>
-                <img
-                  src="images/icons/dart-lang-brands-solid.svg"
-                  alt="Dart Icon"
-                />Dart
+                <img src="images/icons/dart.svg" />
+                <p>Dart</p>
               </li>
               <li>
-                <img
-                  src="images/icons/html5-brands-solid.svg"
-                  alt="HTML5 Icon"
-                />HTML
+                <img src="images/icons/html.svg" />
+                <p>HTML</p>
               </li>
               <li>
-                <img
-                  src="images/icons/python-brands-solid.svg"
-                  alt="Python Icon"
-                />Python
+                <img src="images/icons/python.svg" />
+                <p>Python</p>
               </li>
               <li>
-                <img
-                  src="images/icons/js-brands-solid.svg"
-                  alt="JS Icon"
-                />JavaScript (JS)
+                <img src="images/icons/js.svg" />
+                <p>Javascript (JS)</p>
               </li>
               <li>
-                <img
-                  src="images/icons/typescript-svgrepo-com.svg"
-                  alt="TS Icon"
-                />TypeScript (TS)
+                <img src="images/icons/ts.svg" />
+                <p>Typescript (TS)</p>
               </li>
               <li>
-                <img
-                  src="images/icons/c-sharp-svgrepo-com.svg"
-                  alt="C# Icon"
-                />C#
+                <img src="images/icons/csharp.svg" />
+                <p>C#</p>
               </li>
               <li>
-                <img
-                  src="images/icons/css3-02-svgrepo-com.svg"
-                  alt="CSS Icon"
-                />CSS
+                <img src="images/icons/css.svg" />
+                <p>CSS</p>
+              </li>
+              <li>
+                <img src="images/icons/svg-logo.svg" />
+                <p>Scaleable Vector Graghic (SVG)</p>
               </li>
             </ul>
           </div>
-        </section>
-        <section class="toolkit-item">
-          <h2 class="card-title">Interests</h2>
-          <div class="card-content">
-            <p>Broader Fields of Study and Application</p>
+          <div class="tab-panel" id="other">
+            <h2>Interests</h2>
+            <p class="sub-heading">Broader Fields of Study and Application</p>
             <ul>
-              <li>Web Development</li>
-              <li>Mobile App Development</li>
-              <li>Game Development</li>
-              <li>Cybersecurity</li>
-              <li>Machine Learning (ML) and Artificial Intelligence (AI)</li>
-              <li>Networking</li>
-              <li>Internet of Things (IoT)</li>
+              <li>
+                <img src="images/icons/bx-globe-stand.svg" />
+                <p>Web Development</p>
+              </li>
+              <li>
+                <img src="images/icons/bx-mobile.svg" />
+                <p>Mobile App Development</p>
+              </li>
+              <li>
+                <img src="images/icons/bx-joystick.svg" />
+                <p>Game Development</p>
+              </li>
+              <li>
+                <img src="images/icons/bx-alert-shield.svg" />
+                <p>Cybersecurity</p>
+              </li>
+              <li>
+                <img src="images/icons/bx-desktop.svg" />
+                <p>Machine Learning (ML)</p>
+              </li>
+              <li>
+                <img src="images/icons/bx-brain.svg" />
+                <p>Artificial Intelligence (AI)</p>
+              </li>
+              <li>
+                <img src="images/icons/bx-link-alt.svg" />
+                <p>Networking</p>
+              </li>
+              <li>
+                <img src="images/icons/bx-wifi.svg" />
+                <p>Internet of Things (IoT)</p>
+              </li>
             </ul>
           </div>
-        </section>
+        </div>
       </div>
+      <script src="scripts/tab-changer.js"></script>
     </main>
   </body>
 </html>

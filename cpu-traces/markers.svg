@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+    <defs >
+        <marker
+            style="overflow: visible"
+                id="marker"
+                refX="-2"
+                refY="0"
+                orient="auto"
+                markerWidth="2.0020001"
+                markerHeight="1.001"
+                viewBox="0 0 1 1"
+                preserveAspectRatio="xMidYMid"
+            >
+            <path
+              transform="scale(0.45)"
+              style="
+                fill: context-fill;
+                fill-rule: evenodd;
+                stroke: context-stroke;
+                stroke-width: 2;
+              "
+              d="M 5,0 C 5,2.76 2.76,5 0,5 -2.76,5 -5,2.76 -5,0 c 0,-2.76 2.3,-5 5,-5 2.76,0 5,2.24 5,5 z"
+              id="path20-8"
+            />
+          </marker>
+    </defs>
+</svg>
